@@ -1,0 +1,35 @@
+# Ignore Node.js build artifacts
+node_modules/
+/dist/
+/build/
+
+# Ignore SPA and SSR app dependencies
+/apps/spa/node_modules/
+/apps/ssr/node_modules/
+
+# Ignore logs and databases
+*.log
+*.sqlite
+*.sqlite3
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Environment configuration
+.env
+
+# Ignore all .json files in the root, except package.json, in case you have other JSON files
+/*.json
+!package.json
+
+# Ignore all .md files in the root, except README.md
+/*.md
+!README.md
+
+
