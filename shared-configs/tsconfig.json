@@ -16,6 +16,4 @@
       "@/*": ["*"],
     },
   },
-  "include": ["../apps/spa/src/**/*.ts", "../apps/spa/src/**/*.tsx","../apps/ssr/src/**/*.ts","../apps/ssr/src/**/*.tsx"],
-  "exclude": ["node_modules"]
 }

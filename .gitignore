@@ -32,4 +32,8 @@ Thumbs.db
 /*.md
 !README.md
 
+#Ignore generated css
+/shared-congigs/output.css
 
+#Ignore Turbo
+.turbo

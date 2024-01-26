@@ -7,7 +7,8 @@
     "lint": "turbo lint --",
     "format": "prettier --write '{apps,packages}/**/*.{js,jsx,ts,tsx,json,md}'",
     "build": "turbo build",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "setup": "./setup.sh"
   },
   "keywords": [],
   "author": "",
@@ -18,8 +19,12 @@
     "shared-configs/*"
   ],
   "dependencies": {
+    "autoprefixer": "^10.4.17",
+    "postcss": "^8.4.33",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "sass": "^1.70.0",
+    "tailwindcss": "^3.4.1"
   },
   "devDependencies": {
     "@commitlint/cli": "^18.5.0",
@@ -28,11 +33,13 @@
     "husky": "^8.0.0",
     "npm-run-all": "^4.1.5",
     "prettier": "^3.2.4",
-    "turbo": "^1.11.3"
+    "turbo": "^1.11.3",
+    "vite": "^5.0.12"
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm run lint && npm run format"
+      "pre-commit": "npm run lint && npm run format",
+      "commit-msg": "npm run commit-msg"
     }
   }
 }

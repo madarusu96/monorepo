@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
+import '../../../../shared-configs/output.css'
 import './globals.css'
 import React from 'react'
 

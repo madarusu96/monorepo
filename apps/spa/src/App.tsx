@@ -1,8 +1,9 @@
-import { useState } from 'react'
+import React, { useState } from 'react'
+import '../../../shared-configs/output.css'
+import Button from '../../../packages/ui-components/Button'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
-import React from 'react'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -22,6 +23,7 @@ function App() {
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
         </button>
+        <Button />
         <p>
           Edit <code>src/App.tsx</code> and save to test HMR
         </p>
